@@ -35,6 +35,7 @@ template_package
 ### Outside of `template_src`
 All files outside of `template_src` are used to define parameters about the template. These files are not copied over at creation, so feel free to add a README or any other files outside  of template_src.
 
+#### index.js
 `index.js` points to where the template exists. You'll see that index.js usually looks like:
 ```javascript
 var path = require('path');
@@ -44,17 +45,20 @@ module.exports = {
 };
 ```
 
-`package.json` tells you about the template. It is necessary state that `"main": "index.js"` so that the reference to the template source in `index.js` is propagated. All templates should contain the keyword `"cordova:template"` so that the template is searchable on npm.
-```javascript
-...
-"main": "index.js",
-...
-"keywords": [
-"cordova:template"
-...
+#### package.json
+This `package.json` holds *information about the template itself* like its name, version etc. All templates should contain the keyword `"cordova:template"` so that the template is searchable on npm. For example:
+```json
+{
+    "name": "cordova-example-template",
+    "version": "1.0.0",
+    "...": "...",
+    "keywords": [
+        "cordova:template"
+    ]
+}
 ```
 
 ### Inside of `template_src`
 All files inside of `template_src` compose the template from which a user would desire in order to create their project. Everything in this folder is copied over to the created project.
 
-(The package.json in `template_src` should be filled with information that describes the project that would be created from the template.)
+The package.json in `template_src` should be filled with information that describes *the project that would be created from the template*.
