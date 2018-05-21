@@ -26,11 +26,11 @@ This is a reference for building and publishing Cordova Templates.
 ```
 template_package
 ├── package.json (for your template package to be published on npm)
-├──	index.js
+├── index.js
 └── template_src (contains template files)
     ├── package.json 
-	├── config.xml 
-	└── (files and folders that make up the template)
+    ├── config.xml 
+    └── (files and folders that make up the template)
 ```
 ### Outside of `template_src`
 All files outside of `template_src` are used to define parameters about the template. These files are not copied over at creation, so feel free to add a README or any other files outside  of template_src.
