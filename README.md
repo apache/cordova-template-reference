@@ -19,6 +19,17 @@
 #
 -->
 
+---
+**Deprecation Notice**
+
+This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is in the future but any more future issues will not be fixed by the Cordova community.
+
+Feel free to fork this repository and improve your fork. Existing forks are listed in [Network](network) and [Forks](network/members).
+
+- Reason for deprecation: Merged into [cordova-app-hello-world](https://github.com/apache/cordova-app-hello-world)
+- Learn more: https://github.com/apache/cordova-discuss/issues/91
+---
+
 # Cordova Template Reference
 This is a reference for building and publishing Cordova Templates.
 
