@@ -20,7 +20,7 @@
 -->
 
 ---
-**Deprecation Notice**
+📌  **Deprecation Notice**
 
 This repository is deprecated and no more work will be done on this by Apache Cordova. You can continue to use this and it should work as-is but any future issues will not be fixed by the Cordova community.
 
